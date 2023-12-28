@@ -2,7 +2,6 @@
 package controlador;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -175,5 +174,4 @@ public class EmpleadoServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }
-
 }

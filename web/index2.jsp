@@ -7,7 +7,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Cbo Empleado</title>
+        <link rel="icon" href="assets/Clase.png">
     </head>
     <body>
         <h2>Consulta por nombre</h2>

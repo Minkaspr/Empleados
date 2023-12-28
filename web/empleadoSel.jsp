@@ -1,5 +1,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="modelo.Empleado"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +10,16 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <form action="Empleado" method="get">
+            <label>
+                Buscar
+                <input type="text" name="cod"/>
+            </label>
+            <input type="hidden" name="opcion" value="consultaCod"/>
+            <input type="submit" value="Buscar"/>
+        </form>
+
+
         <table>
             <thead>
                 <tr>
@@ -19,7 +32,7 @@
             </thead>
             <tbody>
                 <% 
-                    ArrayList <Empleado> lista = (ArrayList<Empleado>)request.getAttribute("lista");
+                    ArrayList<Empleado> lista = (ArrayList<Empleado>)request.getAttribute("lista");
                     for(int i = 0; i < lista.size(); i++){
                         Empleado empleado = lista.get(i);
                     

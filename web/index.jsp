@@ -7,6 +7,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Operaciones</h1>
+        <ul>
+            <li><a href="Empleado?opcion=listar">Listar empleados</a></li>
+            <li><a href="empleadoIns.jsp">Nuevo empleado</a></li>
+            <li><a href="Empleado?opcion=cboNombres">Consultar por nombres</a></li>
+            <li><a href="index3.jsp">Consultar por nombres</a></li>
+        </ul>
     </body>
 </html>
